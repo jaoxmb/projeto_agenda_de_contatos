@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agenda de contatos</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header id="title">
+    <div class="container">
+      <h1>Contatos</h1>
+      <button type="button" id="newContact"><img src="./images/plus-icon.svg" alt="Criar novo contato"/></button>
+    </div>
+  </header>
+  <aside>
+    <div class="container">
+      <div>
+        <form id="search">
+          <input type="text" id="searchInput" placeholder="Pesquise..."/>
+          <label for="searchInput"><img src="/images/search-icon.svg" alt="lupa"/></label>
+        </form>
+        <form id="creating">
+          <input type="text" placeholder="Nome do novo contato..." required/>
+          <input type="tel" placeholder="Número..." required/>
+          <button type="submit">Criar novo contato</button>
+        </form>
+      </div>
+    </div>
+  </aside>
+  <main>
+    <div class="container">
+      <table id="agenda">
+        <tbody>
+          
+        </tbody>
+      </table>
+    </div>
+  </main>
+  <script src="./load_list.js"></script>
+  <script src="./creating_contact.js"></script>
+</body>
+</html>

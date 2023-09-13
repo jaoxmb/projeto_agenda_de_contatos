@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --color-light: #fff;
+  --color-light-medium: #e3e3e3;
+  --color-medium: #bababa; 
+  --color-medium-dark: #808080;
+  --color-dark: #000;
+  --color-blue: #4c90f7;
+
+  --border-radius: 4px;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  font-size: 16px;
+  font-weight: normal;
+}
+.container{
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+h1,h2,h3,h4{
+  font-weight: 900;
+}
+h1{
+  font-size: 42px;
+}
+input{
+  width: 100%;
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  background-color: var(--color-light-medium);
+  color: var(--color-dark);
+  border-radius: var(--border-radius);
+}
+input::placeholder{
+  color: var(--color-medium-dark);
+}
+button{
+  padding: 10px 10px;
+  border: none;
+  outline: none;
+  border-radius: var(--border-radius);
+  background-color: var(--color-blue);
+  color: var(--color-light);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#title{
+  width: 100%;
+  margin: 80px 0px 20px 0px;
+}
+#title .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#title button{
+  padding: 0;
+  height: 40px;
+  background-color: transparent;
+  transition: transform 0.7s;
+}
+#title button img{
+  height: 100%;
+}
+aside .container > div{
+  overflow: hidden;
+  border-radius: var(--border-radius);
+  transition: height 0.6s;
+}
+aside form {
+  transition: all 0.6s;
+}
+#search{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  position: relative;
+  align-items: center;
+}
+#search input{
+  padding: 10px 30px 10px 10px;
+}
+#search label{
+  position: absolute;
+  right: 5px;
+  height: 25px;
+  cursor: pointer;
+}
+#search label img{
+  height: 100%;
+}
+#creating{
+  position: relative;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+main{
+  margin-bottom: 80px;
+}
+#agenda{
+  width: 100%;
+  border-spacing: 0;
+}
+#agenda tr td:first-child{
+  font-weight: 500;
+}
+#agenda tr td:last-child{
+  text-align: right;
+  color: var(--color-medium-dark);
+}
+th, td{
+  border-bottom: 1px solid var(--color-medium);
+}
+th{
+  text-align: left;
+  padding: 15px 10px 8px 10px;
+  color: var(--color-medium-dark);
+}
+td{
+  padding: 8px 10px;
+}
